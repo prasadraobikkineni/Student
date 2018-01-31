@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "459077835904",
+    "firebase_url": "https://sadsa-284b1.firebaseio.com",
+    "project_id": "sadsa-284b1",
+    "storage_bucket": "sadsa-284b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459077835904:android:ebf0e1f48bd8afaa",
+        "android_client_info": {
+          "package_name": "com.studentparty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459077835904-dl26gsi4pi75lh96viv7ddkrcgb4l77v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.studentparty",
+            "certificate_hash": "a7e130758b4e012e4cfa27dc6b71b97e0807bf52"
+          }
+        },
+        {
+          "client_id": "459077835904-97l6o8fb9mvtho6j9rmoha4d6afm98rn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPmMon8iHOG2hYE8QboFnVBinG1UrUDkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459077835904-97l6o8fb9mvtho6j9rmoha4d6afm98rn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

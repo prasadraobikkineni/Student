@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+   >
+
+
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/nav"
+            android:background="@color/colorAccent"
+            app:layout_heightPercent="9%"
+            app:layout_widthPercent="100%">
+
+            <ImageView
+                android:id="@+id/btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/ic_navigation_left_from_media_chooser_header_bar" />
+
+            <TextView
+                android:id="@+id/myloche"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="New Post"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xlarge_text_size"
+                android:textStyle="bold" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/imageupload"
+            android:layout_below="@+id/nav"
+            android:background="@drawable/post_rounded"
+            app:layout_heightPercent="28%"
+            app:layout_marginLeftPercent="3%"
+            app:layout_marginRightPercent="3%"
+            app:layout_marginTopPercent="3%"
+
+            app:layout_widthPercent="94%">
+
+            <ImageView
+                android:id="@+id/videoimage"
+                android:adjustViewBounds="true"
+                android:background="@drawable/img_bg"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="100%" />
+
+            <ImageView
+                android:id="@+id/mulpleimage"
+                android:adjustViewBounds="true"
+                android:background="@drawable/img_bg"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:layout_heightPercent="50%"
+                app:layout_widthPercent="50%" />
+
+            <ImageView
+                android:id="@+id/mulpleimagesecond"
+                android:layout_toRightOf="@+id/mulpleimage"
+                android:adjustViewBounds="true"
+                android:background="@drawable/img_bg"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:layout_heightPercent="50%"
+                app:layout_widthPercent="50%" />
+
+            <ImageView
+                android:id="@+id/mulpleimagethree"
+                android:layout_below="@+id/mulpleimage"
+                android:adjustViewBounds="true"
+                android:background="@drawable/img_bg"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:layout_heightPercent="50%"
+                app:layout_widthPercent="33%" />
+
+            <ImageView
+                android:id="@+id/mulpleimagefour"
+                android:layout_below="@+id/mulpleimage"
+                android:layout_toRightOf="@+id/mulpleimagethree"
+                android:adjustViewBounds="true"
+                android:background="@drawable/img_bg"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:layout_heightPercent="50%"
+                app:layout_widthPercent="33%" />
+
+            <ImageView
+                android:id="@+id/mulpleimagefive"
+                android:layout_below="@+id/mulpleimage"
+                android:layout_toRightOf="@+id/mulpleimagefour"
+                android:adjustViewBounds="true"
+                android:background="@drawable/img_bg"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:layout_heightPercent="50%"
+                app:layout_widthPercent="33%" />
+
+            <ImageView
+                android:id="@+id/imagupload"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/img_upload" />
+
+            <TextView
+                android:id="@+id/uploadcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagupload"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="Upload Image/ Video"
+
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/desview"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageupload"
+
+            app:layout_marginLeftPercent="5%"
+
+            app:layout_marginTopPercent="2%"
+
+            app:layout_widthPercent="100%">
+
+            <TextView
+                android:id="@+id/descontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write Something"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xlarge_text_size" />
+
+            <EditText
+                android:id="@+id/login_ed_username"
+                android:layout_below="@+id/descontent"
+                android:background="@drawable/round_box_bg"
+                android:gravity="top"
+                android:hint="@string/quote"
+                android:inputType="textMultiLine"
+                android:padding="5dip"
+                android:textSize="@dimen/medium_text_size"
+                app:layout_heightPercent="40%"
+                app:layout_marginTopPercent="4%"
+                app:layout_widthPercent="96%"
+
+
+                />
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/tittleview"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desview"
+
+            app:layout_marginLeftPercent="5%"
+
+            app:layout_marginTopPercent="2%"
+
+            app:layout_widthPercent="100%">
+
+            <TextView
+                android:id="@+id/totllogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tittle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xlarge_text_size" />
+
+            <EditText
+                android:id="@+id/tittleedit"
+                android:layout_below="@+id/totllogo"
+                android:background="@drawable/round_box_bg"
+                android:gravity="top"
+                android:inputType="none"
+                android:padding="5dip"
+                android:textSize="@dimen/medium_text_size"
+                app:layout_heightPercent="20%"
+                app:layout_marginTopPercent="4%"
+                app:layout_widthPercent="96%"
+
+
+                />
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/donebtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent">
+
+            <TextView
+                android:id="@+id/posttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Upload Post"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xlarge_text_size"
+                android:textStyle="bold"
+
+                />
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+
+
+</android.support.percent.PercentRelativeLayout>

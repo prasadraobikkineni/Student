@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favorites"
+
+        android:icon="@drawable/chat"
+        android:title="@string/chat"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_schedules"
+
+        android:icon="@drawable/chat"
+        android:title="@string/checkin"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_music"
+
+        android:icon="@drawable/chat"
+        android:title="@string/friends"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/setting"
+       
+        android:icon="@drawable/chat"
+        android:title="@string/settings"
+        app:showAsAction="ifRoom" />
+</menu>

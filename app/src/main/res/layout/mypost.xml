@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="80dp"
+        android:background="#646464"
+        android:elevation="4dp"
+        android:orientation="vertical"
+       >
+
+
+
+          <TextView
+              android:id="@+id/eventTittle"
+              android:text="eventText"
+              android:layout_marginLeft="5dp"
+              android:layout_marginTop="30dp"
+              android:textSize="20sp"
+              android:textColor="@color/white"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+          <ImageView
+              android:id="@+id/eventImage"
+              android:layout_below="@+id/eventTittle"
+              android:src="@drawable/studentpartytheme"
+              android:layout_width="match_parent"
+              android:layout_height="200dp" />
+
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_below="@+id/eventImage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#d67601"
+            android:text="Check in"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/user_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        />
+</RelativeLayout>
